@@ -12,11 +12,15 @@ gulp.task('watch', function(){
    });
    watch('./app/index.html', function(){
    	   browsersync.reload();
-   })
+   });
 
    watch('./app/assets/styles/**/*.css', function(){
    	   gulp.start('cssinject');
-   })
+   });
+
+   watch('./app/assets/scripts/**/*.js', function(){
+       gulp.start('scriptsRefresh');
+   });
 
 });
 
@@ -24,3 +28,7 @@ gulp.task('cssinject',['styles'],function(){
     return gulp.src('./app/temp/styles/styles.css')
     .pipe(browsersync.stream());
 });
+
+gulp.task('scriptsRefresh', ['scripts'], function(){
+  browsersync.reload();
+})
