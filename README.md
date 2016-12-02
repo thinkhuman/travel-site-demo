@@ -1,6 +1,6 @@
 #Travel Site Demo
 
-This is a demo project I built to practice current skills and learn several new ones. It pulls together many tools and topics I've wanted to learn and practice using together, including:
+This is a demo project I built to practice current skills and learn several new ones. It pulls together many tools and topics I've wanted to learn and practice using, including:
 
 * ES6
 * Babel
